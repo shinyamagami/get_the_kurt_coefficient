@@ -51,6 +51,7 @@ def main():
     average = get_average(number, total)
     pop_stand_dev = get_pop_stand_dev(number, price_list, average)
     kurt_coefficient = get_kurt_coefficient(number, price_list, average, pop_stand_dev)
+    prices.close()
     print('The number of prices listed in your file is ', number)
     print('The total of prices listed in your file is ', total)
     print('The average of prices listed in your file is ', average)
